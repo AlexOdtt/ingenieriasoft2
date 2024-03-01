@@ -1,0 +1,107 @@
+html {
+  --s: 200px; /* control the size */
+  --c: #fff; /* first color */
+  
+  --_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
+  background: 
+    linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+    linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+    linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),        
+    linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0),
+    #1095c1; /* second color */
+  background-size: var(--s) var(--s);
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.form-container {
+background-color: #2c2c2c;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+max-width: 400px;
+width: 100%;
+}
+
+h1 {
+text-align: center;
+color: #fff;
+font-size: 24px;
+}
+
+p {
+margin-bottom: 20px;
+color: #bbb;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 8px;
+color: #fff;
+}
+
+input {
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #444;
+border-radius: 6px;
+background-color: #333;
+color: #fff;
+}
+
+button {
+background-color: #ff6600;
+color: #fff;
+padding: 12px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+}
+
+button:hover {
+background-color: #e55c00;
+}
+
+a {
+color: #3498db;
+text-decoration: none;
+text-align: center;
+display: block;
+margin-top: 20px;
+}
+
+a:hover {
+text-decoration: underline;
+color: #3171a1;
+}
+
+.sr-only{
+position: absolute;
+left: -100000px;
+top:auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+.error{
+color: rgb(194, 4, 4);
+}
+
+.escondido{
+display: none;
+}
